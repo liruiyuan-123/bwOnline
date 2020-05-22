@@ -1,2 +1,6 @@
+.vscode
 .idea
 db.sqlite3
+*.pyc
+*~
+env
