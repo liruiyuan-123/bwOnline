@@ -1,7 +1,7 @@
+.txt
 .vscode
 .idea
 db.sqlite3
 *.pyc
 *~
 env
-manage.py
