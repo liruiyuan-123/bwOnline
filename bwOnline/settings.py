@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'xadmin',
     'crispy_forms',
     'django.contrib.admin',
+    'captcha',
+
 ]
 
 MIDDLEWARE = [
@@ -145,3 +147,10 @@ STATICFILES_DIRS = (
 AUTHENTICATION_BACKENDS = (
     'users.views.CustomBackend',
 )
+
+EMAIL_HOST = "smtp.qq.com"  # SMTP服务器主机
+EMAIL_PORT = 25             # 端口
+EMAIL_HOST_USER = "2922657067@qq.com"       # 邮箱地址
+EMAIL_HOST_PASSWORD = "dwjybikexxxxxxxx"    # 授权码
+EMAIL_USE_TLS= True
+EMAIL_FROM = "2922657067@qq.com"
