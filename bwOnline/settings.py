@@ -96,7 +96,7 @@ DATABASES = {
         'NAME': 'mxonline',        #数据库名字
         'USER': 'root',          #账号
         'PASSWORD': '123456',      #密码
-        'HOST': '192.168.0.101',    #IP
+        'HOST': '192.168.0.103',    #IP
         'PORT': '3306',                   #端口
     }
 }
@@ -140,4 +140,8 @@ USE_TZ = False
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'static'),
+)
+
+AUTHENTICATION_BACKENDS = (
+    'users.views.CustomBackend',
 )
