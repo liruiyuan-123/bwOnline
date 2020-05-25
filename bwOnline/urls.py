@@ -7,6 +7,7 @@ from django.urls import path,include,re_path
 from django.views.generic import TemplateView
 from users.views import *
 
+from organization.views import *
 
 urlpatterns = [
     path('xadmin/', xadmin.site.urls),
@@ -19,4 +20,6 @@ urlpatterns = [
     # 重置密码激活邮箱的url
     re_path('reset/(?P<active_code>.*)/', ResetView.as_view(), name='reset_pwd'),
     path('modify_pwd/', ModifyPwdView.as_view(), name='modify_pwd'),
+    # 机构首页
+    path('org_list/',OrgView.as_view(),name = 'org_list'),
 ]
