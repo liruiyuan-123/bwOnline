@@ -28,8 +28,6 @@ class TeacherAdmin(object):
     search_fields = ['org', 'name', 'work_years', 'work_company']
     list_filter = ['org__name', 'name', 'work_years', 'work_company','click_nums', 'fav_nums', 'add_time']
 
-
 xadmin.site.register(CityDict, CityDictAdmin)
 xadmin.site.register(CourseOrg, CourseOrgAdmin)
 xadmin.site.register(Teacher, TeacherAdmin)
-
